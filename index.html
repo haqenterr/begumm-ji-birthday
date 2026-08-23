@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12081b">
+  <meta name="description" content="A premium birthday surprise for cutuuu.">
+  <title>Happy Birthday, cutuuu ❤️</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-heart">♥</div>
+    <div class="loader-text">Preparing something special... ❤️</div>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div id="burst-layer" aria-hidden="true"></div>
+
+  <main>
+    <section id="opening" class="opening screen">
+      <div class="stars"></div>
+      <div class="opening-content">
+        <p id="opening1" class="eyebrow">Wait... ✨</p>
+        <p id="opening2" class="opening-line">Someone very special has a birthday today...</p>
+        <p id="opening3" class="opening-question">Can you guess who? 👀❤️</p>
+        <h1 id="opening4" class="reveal-title">MY CUTUUU <span>❤️</span></h1>
+        <button id="openSurprise" class="glow-btn" type="button">Open Your Surprise 🎁</button>
+      </div>
+    </section>
+
+    <section id="hero" class="hero section">
+      <div class="hero-inner">
+        <div class="section-kicker">A little world made for you</div>
+        <h2>Happy Birthday,<br><span>Begumm ji ❤️🎂✨</span></h2>
+        <p class="hero-sub">To my very special cutuuu...</p>
+
+        <div class="hero-photo-wrap">
+          <div class="photo-orbit orbit-one"></div>
+          <div class="photo-orbit orbit-two"></div>
+          <div class="hero-photo-card">
+            <img src="../assets/images/photo1.jpg" alt="A birthday memory of cutuuu">
+            <div class="photo-shine"></div>
+          </div>
+          <span class="float-heart heart-a">♥</span>
+          <span class="float-heart heart-b">♥</span>
+          <span class="float-star star-a">✦</span>
+        </div>
+
+        <p class="hero-quote">Today isn't just another date...<br>today is the day the world got a little more beautiful. ❤️</p>
+        <button class="outline-btn scroll-next" type="button">Start the Journey ✨</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-head">
+        <div class="section-kicker">Chapter 01</div>
+        <h2>Her Photos <span>❤️</span></h2>
+        <p>A little gallery of moments worth keeping.</p>
+      </div>
+
+      <div class="gallery-stage">
+        <button class="gallery-arrow prev" type="button" aria-label="Previous photo">‹</button>
+        <div class="gallery-main">
+          <div class="gallery-frame">
+            <img id="galleryImage" src="../assets/images/photo1.jpg" alt="Gallery photo">
+            <div class="gallery-glow"></div>
+          </div>
+          <div id="galleryCaption" class="gallery-caption">My cutuuu ❤️</div>
+          <div id="galleryCount" class="gallery-count">01 / 08</div>
+        </div>
+        <button class="gallery-arrow next" type="button" aria-label="Next photo">›</button>
+      </div>
+
+      <div class="thumbs" id="thumbs">
+        <button class="thumb active" data-index="0" type="button"><img src="../assets/images/photo1.jpg" alt="My cutuuu ❤️"></button><button class="thumb " data-index="1" type="button"><img src="../assets/images/photo2.jpg" alt="That smile..."></button><button class="thumb " data-index="2" type="button"><img src="../assets/images/photo3.jpg" alt="Simply beautiful ✨"></button><button class="thumb " data-index="3" type="button"><img src="../assets/images/photo4.jpg" alt="One of my favourite views ❤️"></button><button class="thumb " data-index="4" type="button"><img src="../assets/images/photo5.jpg" alt="Some pictures become memories."></button><button class="thumb " data-index="5" type="button"><img src="../assets/images/photo6.jpg" alt="A little moment, a lot of magic ✨"></button><button class="thumb " data-index="6" type="button"><img src="../assets/images/photo7.jpg" alt="A memory worth keeping ❤️"></button><button class="thumb " data-index="7" type="button"><img src="../assets/images/photo8.jpg" alt="Forever a special view ✨"></button>
+      </div>
+    </section>
+
+    <section id="special" class="section special-section">
+      <div class="section-head">
+        <div class="section-kicker">Chapter 02</div>
+        <h2>Why You're So Special <span>❤️</span></h2>
+        <p>The little things are often the biggest things.</p>
+      </div>
+      <div class="special-grid">
+        <article class="glass-card reveal"><span>01</span><h3>Your Smile ❤️</h3><p>The kind of little moment that can make an ordinary day feel warmer.</p></article>
+        <article class="glass-card reveal"><span>02</span><h3>Your Nature ✨</h3><p>There is something genuinely comforting about the way you are.</p></article>
+        <article class="glass-card reveal"><span>03</span><h3>Your Kindness 🤍</h3><p>Small kindnesses have a way of staying with people long after the moment.</p></article>
+        <article class="glass-card reveal"><span>04</span><h3>Your Random Talks 😂</h3><p>Even the most random conversations somehow become memorable.</p></article>
+        <article class="glass-card reveal"><span>05</span><h3>Your Little Anger 😭😂</h3><p>A little dramatic, a little funny, and definitely memorable.</p></article>
+        <article class="glass-card reveal"><span>06</span><h3>Your Presence 🫶🏻</h3><p>Sometimes simply being there is more special than doing anything extraordinary.</p></article>
+        <article class="glass-card reveal"><span>07</span><h3>Your Heart ❤️</h3><p>Warmth, softness and sincerity are things worth protecting.</p></article>
+      </div>
+    </section>
+
+    <section id="letter" class="section letter-section">
+      <div class="section-head">
+        <div class="section-kicker">Chapter 03</div>
+        <h2>Dear Begumm ji... <span>❤️</span></h2>
+        <p>A letter, written slowly, for you.</p>
+      </div>
+      <article class="letter-card reveal">
+        <div class="letter-top">✦</div>
+        <div class="letter-content">
+          <p>Happy Birthday, Begumm ji ❤️🎂✨</p>
+<p>Begumm ji…<br>Aaj ka din mere liye sirf ek normal date nahi hai. Aaj ka din woh din hai jis din duniya ko aap mili thi… aur shayad meri zindagi ko bhi ek aisi wajah milni thi jiske liye dil thoda aur feel karna seekhe. ❤️</p>
+<p>Happy Birthday to the most special person. 🫶🏻</p>
+<p>I genuinely hope ki aapki life ka ye naya chapter aapke liye utni hi khoobsurat khushiyan lekar aaye, jitni khoobsurti aap apne aas-paas ke logon ki life mein laati hain.</p>
+<p>Kabhi kabhi na, kuch log zindagi mein bas “log” banke nahi aate…<br>woh dheere-dheere aadat ban jaate hain,<br>phir sukoon ban jaate hain,<br>phir smile ka reason ban jaate hain,<br>aur ek waqt ke baad pata hi nahi chalta ki kab woh dil ke itne kareeb aa gaye. ❤️</p>
+<p>Aap mere liye kuch aisi hi hain, Begumm ji.</p>
+<p>I don't know ki main words mein exactly explain kar paunga ya nahi ki aap mere liye kya hain… because honestly, kuch feelings ko explain karna possible hi nahi hota. Unhe bas feel kiya ja sakta hai.</p>
+<p>Aur aap unhi feelings mein se ek hain. ❤️</p>
+<p>Aaj aapka birthday hai, isliye aaj main bas aapke liye achhi cheezein wish karna chahta hoon.</p>
+<p>I wish aapki aankhon mein kabhi woh aansu na aaye jo aapki khushi cheen lein.<br>I wish aapki smile hamesha genuine rahe.<br>I wish aapko life mein woh sab mile jiske liye aapne kabhi chup-chaap dua maangi ho.<br>I wish aapke saare dreams slowly, beautifully reality ban jaayein.<br>Aur sabse zyada… I wish ki aap kabhi khud ko alone feel na karein.</p>
+<p>Because you deserve to be loved, respected, understood and appreciated. ❤️</p>
+<p>Begumm ji, aapko pata hai?</p>
+<p>Kabhi kabhi ek simple sa “kaisi ho?” bhi kisi ke poore din ko better bana deta hai.<br>Kabhi ek chhoti si conversation poore mood ko change kar deti hai.<br>Kabhi kisi ki ek smile dil mein unnecessarily khushi bhar deti hai.</p>
+<p>Aur aapki presence kuch aisi hi hai.</p>
+<p>Aapse baat hoti hai toh pata nahi kyun, normal si conversation bhi thodi special lagne lagti hai.<br>Aur jab baat nahi hoti… toh ek ajeeb sa “kuch missing hai” wala feeling aa jaata hai.</p>
+<p>Maybe that's what makes someone special.</p>
+<p>Not because they do something extraordinary every day…<br>but because their existence itself starts feeling extraordinary. ❤️</p>
+<p>Aapki personality mein jo simplicity hai na, woh mujhe genuinely bahut achhi lagti hai. Aapko shayad khud realize bhi nahi hota hoga ki aapki chhoti-chhoti baatein kitni yaad reh jaati hain.</p>
+<p>Kabhi aapka random sa message,<br>kabhi aapka mood,<br>kabhi aapki silly si baat,<br>kabhi aapka gussa,<br>kabhi aapka hasna…</p>
+<p>Sab kuch apne aap memory ban jaata hai.</p>
+<p>Aur shayad isi ko kehte hain kisi ka dil mein jagah bana lena.</p>
+<p>Ek chhoti si shayari aapke naam—</p>
+<p>“Na chaand ki khwahish hai,<br>na sitaaron ki farmaish hai,<br>Bas aap hamesha muskuraati rahein,<br>mere liye itni si guzarish hai.” ❤️</p>
+<p>Aur ek aur…</p>
+<p>“Kuch log kahaniyon mein milte hain,<br>kuch log khwaabon mein milte hain,<br>aap unmein se hain Begumm ji,<br>jo kismat se milte hain.” ✨</p>
+<p>I know life isn't always perfect.</p>
+<p>Kabhi good days aate hain, kabhi bad days.<br>Kabhi sab kuch according to plan hota hai, aur kabhi ekdum opposite.</p>
+<p>Kabhi hum khud ko samajh nahi paate.<br>Kabhi apne hi thoughts se fight karte hain.<br>Kabhi smile ke peeche bahut kuch chhupa hota hai.</p>
+<p>But on your birthday, I just want to remind you of one thing:</p>
+<p>You are important.</p>
+<p>Aapki feelings important hain.<br>Aapke dreams important hain.<br>Aapki happiness important hai.<br>Aur aap khud bhi bahut important hain.</p>
+<p>Please kabhi apni value kisi aur ke behaviour se decide mat karna.</p>
+<p>Agar koi aapko appreciate na kare, iska matlab ye nahi ki aap appreciation deserve nahi karti.</p>
+<p>Agar koi aapki importance samajh na paaye, iska matlab ye nahi ki aap important nahi hain.</p>
+<p>Kabhi kabhi log diamonds ko bhi stones samajh lete hain. 💎</p>
+<p>So always remember—<br>never let someone else's inability to see your worth make you question your own worth.</p>
+<p>Aur haan, birthday girl… 😭❤️</p>
+<p>Aaj thoda extra smile karna allowed hai.<br>Aaj thoda zyada khush rehna allowed hai.<br>Aaj apne liye wish karna allowed hai.<br>Aaj apne favourite logon ke saath time spend karna allowed hai.<br>Aaj cake thoda extra khana bhi allowed hai. 😂🎂</p>
+<p>Because today is YOUR DAY.</p>
+<p>Aur main chahta hoon ki jab aap ye message padhein na, toh aapke face par ek chhoti si smile aaye.</p>
+<p>Bas ek smile.</p>
+<p>Because if these words manage to make you smile even for a few seconds, then honestly, they'll be worth writing.</p>
+<p>Begumm ji…<br>Life mein bahut log milenge.</p>
+<p>Kuch log kuch time ke liye aayenge.<br>Kuch log memories dekar chale jayenge.<br>Kuch log lessons ban jayenge.<br>Aur kuch log aise honge jo bina kisi announcement ke dil ke bahut kareeb aa jayenge.</p>
+<p>Aapki jagah mere liye kya hai, shayad main ek single word mein kabhi define na kar paun.</p>
+<p>But I know one thing—</p>
+<p>You matter to me. A lot.</p>
+<p>Aur main nahi chahta ki aap kabhi ye doubt karein.</p>
+<p>Aapki khushi dekhkar genuinely achha lagta hai.<br>Aap pareshaan hoti hain toh genuinely concern hota hai.<br>Aap smile karti hain toh automatically mood better ho jaata hai.</p>
+<p>Maybe that's the simplest definition of caring about someone.</p>
+<p>No drama.<br>No big words.<br>Bas ek genuine feeling ki “ye insaan khush rahe.”</p>
+<p>And that's exactly what I wish for you today.</p>
+<p>I hope you get the life you've always dreamed about.</p>
+<p>Aisi life jahan aapko apne decisions par regret kam aur proud moments zyada milen.</p>
+<p>Aisi life jahan aapke aas-paas genuine log hon.</p>
+<p>Aisi life jahan aapko fake smiles ki zarurat na pade.</p>
+<p>Aisi life jahan aap apni problems ke saath bhi hope ko pakad ke rakhein.</p>
+<p>Aisi life jahan aapko har birthday par peeche mudkar dekhne par lage—</p>
+<p>“Damn, I've come so far.” ❤️</p>
+<p>And whenever life gets difficult, please remember:</p>
+<p>“Raat chahe kitni bhi gehri ho,<br>savera zaroor aata hai.”</p>
+<p>Aapke difficult days aapki entire story nahi hain.</p>
+<p>Your story is still being written.</p>
+<p>Aur mujhe hope hai ki aage ke pages bahut beautiful honge. ✨</p>
+<p>Happy Birthday once again, Begumm ji. ❤️</p>
+<p>Aaj ke din main aapko sirf birthday wish nahi karna chahta…</p>
+<p>Main aapko ek promise jaisi wish dena chahta hoon—</p>
+<p>Ki chahe life kitni bhi busy ho jaaye,<br>chahe situations change ho jaayein,<br>chahe time kitna bhi pass ho…</p>
+<p>I will always wish good things for you.</p>
+<p>Because some people deserve happiness simply because of who they are.</p>
+<p>And you're one of those people.</p>
+<p>Aapki smile ko kabhi kisi ki negativity ke neeche mat dabne dena.</p>
+<p>Aapki kindness ko kabhi kisi ki selfishness ki wajah se mat badalna.</p>
+<p>Aapke soft heart ko duniya ki harshness ki wajah se stone mat banne dena.</p>
+<p>Stay the same beautiful soul.</p>
+<p>Haan, grow karna.<br>Strong banna.<br>Smart banna.<br>Independent banna.<br>Apne dreams achieve karna.</p>
+<p>But apni woh innocence aur warmth kabhi mat khona jo aapko Begumm ji banati hai. ❤️</p>
+<p>Aur agar kabhi aapko lage ki aapki life mein kuch bhi right nahi ja raha…</p>
+<p>Toh ek baar rukna.</p>
+<p>Deep breath lena.</p>
+<p>Aur khud se kehna—</p>
+<p>“I've survived every bad day till today. I'll survive this one too.”</p>
+<p>Because you are stronger than you think.</p>
+<p>Aur haan, birthday girl, ek baat aur…</p>
+<p>Don't just chase success.</p>
+<p>Chase peace too.</p>
+<p>Don't just chase money.</p>
+<p>Chase memories too.</p>
+<p>Don't just chase achievements.</p>
+<p>Chase moments that make you genuinely happy.</p>
+<p>Because one day jab hum peeche mudkar dekhenge na, toh trophies se zyada woh moments yaad aayenge jahan hum bina kisi reason ke hase the.</p>
+<p>Woh late-night conversations.</p>
+<p>Woh random jokes.</p>
+<p>Woh stupid arguments.</p>
+<p>Woh “kuch nahi hua” kehkar bhi clearly upset hona. 😂</p>
+<p>Woh chhoti-chhoti baatein jo us waqt ordinary lagti hain, but later become precious memories.</p>
+<p>So make a lot of beautiful memories, Begumm ji.</p>
+<p>Laugh a lot.</p>
+<p>Travel.</p>
+<p>Dream big.</p>
+<p>Take pictures.</p>
+<p>Celebrate small victories.</p>
+<p>And most importantly…</p>
+<p>Live.</p>
+<p>Dil khol kar jeena. ❤️</p>
+<p>---</p>
+<p>“Teri khushi se roshan rahe har ek savera,<br>teri muskaan se khoobsurat ho har shaam,<br>jo maanga ho dil ne, woh sab tujhe mile,<br>aur har dua mein ho tera hi naam.” ✨</p>
+<p>---</p>
+<p>Begumm ji, I genuinely hope this birthday marks the beginning of something beautiful in your life.</p>
+<p>A new year of your life.</p>
+<p>New dreams.</p>
+<p>New opportunities.</p>
+<p>New memories.</p>
+<p>New reasons to smile.</p>
+<p>Aur jo bhi cheezein aapko unnecessarily hurt karti hain, I hope gradually they become lessons instead of wounds.</p>
+<p>I hope you meet people who understand your silence.</p>
+<p>People who respect your boundaries.</p>
+<p>People who celebrate your success without jealousy.</p>
+<p>People who stay during difficult days, not just during good ones.</p>
+<p>People who make you feel safe enough to be yourself.</p>
+<p>Because being understood is one of the most beautiful feelings in the world.</p>
+<p>And you deserve that.</p>
+<p>You deserve genuine happiness. ❤️</p>
+<p>Kabhi kabhi shayari mein kaha jaata hai—</p>
+<p>“Mohabbat sirf paas rehne ka naam nahi,<br>door rehkar bhi kisi ki khushi ki dua karna mohabbat hai.”</p>
+<p>And maybe that's why today I don't want anything from you.</p>
+<p>No expectations.</p>
+<p>No demands.</p>
+<p>Bas ek wish.</p>
+<p>Khush rehna.</p>
+<p>Seriously.</p>
+<p>Jitna ho sake, khush rehna.</p>
+<p>Aur agar kabhi life aapko reasons na de smile karne ke…</p>
+<p>toh khud apna reason ban jaana. ❤️</p>
+<p>Because your smile deserves to exist even on ordinary days.</p>
+<p>---</p>
+<p>Happy Birthday, Begumm ji. 🎂❤️</p>
+<p>May Allah bless you with happiness, peace, success and countless beautiful moments.</p>
+<p>May every genuine dua you make find its way to you.</p>
+<p>May your parents always be proud of you.</p>
+<p>May you achieve everything you work hard for.</p>
+<p>May you always have people around you who genuinely care about you.</p>
+<p>May your heart stay soft but strong.</p>
+<p>May your future be brighter than your past.</p>
+<p>And may the coming years give you countless reasons to say:</p>
+<p>“Alhamdulillah, life is beautiful.” 🤍</p>
+<p>Aaj se aapki life ka ek aur chapter start ho raha hai.</p>
+<p>I hope this chapter is full of laughter.</p>
+<p>Full of growth.</p>
+<p>Full of adventures.</p>
+<p>Full of achievements.</p>
+<p>Full of beautiful memories.</p>
+<p>And most importantly…</p>
+<p>full of happiness. ✨</p>
+<p>Aur jo dua mere dil se aapke liye nikalti hai woh bas itni si hai—</p>
+<p>“Ya Allah, iski zindagi mein kabhi khushiyon ki kami na ho,<br>iski aankhon mein aansu aayein bhi toh sirf khushi ke,<br>iske har sapne ko ek khoobsurat manzil mile,<br>aur iska dil hamesha sukoon mein rahe.” 🤲🏻❤️</p>
+<p>And finally…</p>
+<p>If someday you read this message again after many years, I hope you smile and think—</p>
+<p>“Someone really wished me well.”</p>
+<p>Because that's exactly what this entire message is.</p>
+<p>Not just a birthday wish.</p>
+<p>It's a reminder that your existence matters, your happiness matters, and you deserve beautiful things.</p>
+<p>So birthday girl…</p>
+<p>Put that beautiful smile on your face. 😭❤️<br>Forget the stress for today.<br>Enjoy your day.<br>Eat your cake. 🎂<br>Take lots of pictures. 📸<br>Make memories.<br>Laugh until your stomach hurts. 😂<br>And enjoy every little moment.</p>
+<p>Because today isn't just another day.</p>
+<p>Today is the day Begumm ji came into this world. ❤️</p>
+<p>And honestly…</p>
+<p>the world became a little more beautiful that day.</p>
+<p>Happy Birthday once again, meri special si Begumm ji. ❤️🎂✨</p>
+<p>May your smile always remain brighter than every candle on your birthday cake.</p>
+<p>May your dreams always remain bigger than your fears.</p>
+<p>May your heart always remain kinder than the world around you.</p>
+<p>And may every new year of your life bring you closer to the person you dream of becoming.</p>
+<p>Happy Birthday, Begumm ji. ❤️</p>
+<p>Stay happy.<br>Stay blessed.<br>Stay smiling.</p>
+<p>And please…</p>
+<p>never forget how special you are. 🫶🏻</p>
+<p>Once again—</p>
+<p>HAPPY BIRTHDAY, BEGUMM JI ❤️🎂✨</p>
+        </div>
+        <div class="letter-sign">— for my cutuuu ❤️</div>
+      </article>
+    </section>
+
+    <section id="shayari" class="section shayari-section">
+      <div class="section-head">
+        <div class="section-kicker">Chapter 04</div>
+        <h2>Some Words Just Feel Different... <span>✨</span></h2>
+      </div>
+      <div class="shayari-deck">
+        <div class="shayari-card active"><div class="quote-mark">“</div><p>Na chaand ki khwahish hai,<br>
+    na sitaaron ki farmaish hai,<br>
+    Bas aap hamesha muskuraati rahein,<br>
+    mere liye itni si guzarish hai. ❤️</p></div>
+        <div class="shayari-card"><div class="quote-mark">“</div><p>Kuch log kahaniyon mein milte hain,<br>
+    kuch log khwaabon mein milte hain,<br>
+    aap unmein se hain Begumm ji,<br>
+    jo kismat se milte hain. ✨</p></div>
+        <div class="shayari-card"><div class="quote-mark">“</div><p>Teri khushi se roshan rahe har ek savera,<br>
+    teri muskaan se khoobsurat ho har shaam,<br>
+    jo maanga ho dil ne, woh sab tujhe mile,<br>
+    aur har dua mein ho tera hi naam. ✨</p></div>
+      </div>
+      <div class="shayari-dots" aria-label="Shayari selector">
+        <button class="shayari-dot active" type="button" data-index="0" aria-label="Shayari 1"></button>
+        <button class="shayari-dot" type="button" data-index="1" aria-label="Shayari 2"></button>
+        <button class="shayari-dot" type="button" data-index="2" aria-label="Shayari 3"></button>
+      </div>
+    </section>
+
+    <section id="timeline" class="section timeline-section">
+      <div class="section-head">
+        <div class="section-kicker">Chapter 05</div>
+        <h2>Our Little Memory Lane <span>❤️</span></h2>
+        <p>No invented stories—just the feeling behind ordinary moments.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-card"><small>01</small><h3>That first smile...</h3><p>Some moments are tiny when they happen, but somehow stay bright.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-card"><small>02</small><h3>Those random conversations...</h3><p>The ordinary talks that become unexpectedly special.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-card"><small>03</small><h3>Those silly arguments 😂</h3><p>A little chaos, a little laughter, and another memory to keep.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-card"><small>04</small><h3>Those quiet little moments...</h3><p>The moments that don't need a caption to feel meaningful.</p></div></article>
+      </div>
+    </section>
+
+    <section id="wish" class="section final-section">
+      <div class="final-glow"></div>
+      <div class="final-card reveal">
+        <div class="section-kicker">The last little surprise</div>
+        <h2>Make A Wish, <span>cutuuu ❤️</span></h2>
+        <p>Close your eyes for a second, make one beautiful wish, and let this tiny digital universe keep it safe.</p>
+        <button id="wishBtn" class="glow-btn" type="button">I Made My Wish ✨</button>
+        <div id="wishMessage" class="wish-message" aria-live="polite">May it find its way to you. 🤍</div>
+      </div>
+      <p class="footer-line">Made with a little extra care for Begumm ji. ❤️</p>
+    </section>
+  </main>
+
+  <script>
+    window.GALLERY_DATA = [('photo1.jpg', 'My cutuuu ❤️'), ('photo2.jpg', 'That smile...'), ('photo3.jpg', 'Simply beautiful ✨'), ('photo4.jpg', 'One of my favourite views ❤️'), ('photo5.jpg', 'Some pictures become memories.'), ('photo6.jpg', 'A little moment, a lot of magic ✨'), ('photo7.jpg', 'A memory worth keeping ❤️'), ('photo8.jpg', 'Forever a special view ✨')];
+  </script>
+  <script src="../script/script.js"></script>
+</body>
+</html>
