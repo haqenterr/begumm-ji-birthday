@@ -1,0 +1,40 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Georgia,"Times New Roman",serif;background:#10071c;color:#fff}
+body{overflow-x:hidden}
+.screen{display:none;min-height:100vh;min-height:100svh;position:relative;align-items:center;justify-content:center;text-align:center;padding:28px;overflow:hidden;background:radial-gradient(circle at 50% 30%,#5b245f 0,#210d32 42%,#0b0613 100%)}
+.screen.active{display:flex;animation:fadeIn .8s ease both}
+@keyframes fadeIn{from{opacity:0;transform:scale(1.03)}to{opacity:1;transform:scale(1)}}
+.stars{position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px;opacity:.18}
+.teddy{font-size:150px;cursor:pointer;filter:drop-shadow(0 15px 25px #0008);animation:float 2s ease-in-out infinite;position:relative;z-index:2}
+.teddy.bounce{animation:bounce .9s ease}
+@keyframes float{50%{transform:translateY(-14px)}}
+@keyframes bounce{0%,100%{transform:translateY(0) scale(1)}30%{transform:translateY(-55px) scale(1.08)}60%{transform:translateY(10px) scale(.96)}}
+.hint{font-size:20px;margin:12px 0 18px;color:#ffe6f7}
+.magic-btn,.small-btn{border:0;border-radius:999px;cursor:pointer;font-weight:700;letter-spacing:.5px}
+.magic-btn{padding:15px 25px;font-size:16px;color:#3a0c2b;background:linear-gradient(135deg,#fff,#ffd1eb);box-shadow:0 10px 30px #ff7fbe44;transition:.2s}
+.magic-btn:hover{transform:translateY(-3px) scale(1.02)}
+.small-btn{margin-top:14px;padding:10px 16px;background:#ffffff18;color:#fff;border:1px solid #ffffff40}
+.celebrate-card{z-index:2;padding:38px;border-radius:28px;background:#ffffff12;border:1px solid #ffffff25;backdrop-filter:blur(10px);box-shadow:0 20px 60px #0005}
+.big-emoji{font-size:58px;animation:float 1.8s infinite}
+.celebrate-card h1{font-size:clamp(28px,5vw,52px);margin:15px 0 8px}
+.celebrate-card p{font-size:20px}
+#particles,#confetti{position:absolute;inset:0;pointer-events:none}
+.particle,.conf{position:absolute;animation:rise 3.5s linear forwards}
+@keyframes rise{0%{transform:translateY(100vh) scale(.5);opacity:0}10%{opacity:1}100%{transform:translateY(-15vh) rotate(720deg) scale(1.2);opacity:0}}
+.cake-wrap{font-size:110px;position:relative;animation:pop .8s ease}
+@keyframes pop{0%{transform:scale(.3);opacity:0}70%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
+.candles{font-size:38px;margin-top:-25px;letter-spacing:5px;transition:.5s}
+.candles.off{opacity:.2;filter:grayscale(1)}
+#cake h2{font-size:clamp(28px,5vw,44px);margin:20px 0 8px}
+#blowText{max-width:600px;line-height:1.6;color:#ffe6f4;margin:0 auto 20px}
+.birthday-content{z-index:2}
+.burst{font-size:42px;animation:float 1.6s infinite}
+.birthday-content h1{font-size:clamp(45px,10vw,100px);margin:15px 0 0;text-shadow:0 0 35px #ff9fd0}
+.birthday-content h2{font-size:clamp(35px,7vw,70px);margin:5px 0 20px}
+.birthday-content p{font-size:21px;margin-bottom:30px}
+.letter{width:min(900px,100%);max-height:90vh;overflow:auto;text-align:left;background:linear-gradient(145deg,#fffafc,#ffeaf5);color:#34152b;border-radius:24px;padding:clamp(24px,5vw,55px);box-shadow:0 30px 80px #0008;scroll-behavior:smooth}
+.letter-top{text-align:center;font-size:50px}
+.letter h1{text-align:center;color:#8d245d;font-size:clamp(26px,4vw,44px);margin:10px 0 35px}
+.message{font-size:18px;line-height:1.75;white-space:normal}
+.letter .magic-btn{display:block;margin:35px auto 0}
+@media(max-width:600px){.teddy{font-size:115px}.screen{padding:20px}.message{font-size:16px;line-height:1.65}.cake-wrap{font-size:85px}.candles{font-size:30px}.birthday-content h1{line-height:1.05}}
